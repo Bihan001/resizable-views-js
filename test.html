@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple windows view</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="resizable-x">
+        <div class="resizable-y" style="flex: 100%">
+          <div class="img-container" style="flex: 50%">
+            <p>Drag the resizers to change width and height of the windows.</p>
+            <p style="font-size: 20px">😊😉</p>
+          </div>
+          <div class="resizer-y"></div>
+          <div class="img-container" style="flex: 50%">
+            <iframe
+              src="https://www.youtube.com/embed/K_7To_y9IAM"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+          </div>
+        </div>
+        <div class="resizer-x"></div>
+        <div class="resizable-y" style="flex: 0%">
+          <div class="img-container" style="flex: 0%">
+            <iframe src="https://bihan-chakraborty.web.app" title="My portfolio"></iframe>
+          </div>
+          <div class="resizer-y"></div>
+          <div class="img-container" style="flex: 100%">
+            <img src="https://images7.alphacoders.com/295/295942.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
